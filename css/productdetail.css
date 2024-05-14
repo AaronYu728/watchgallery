@@ -1,0 +1,27 @@
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.product-container img {
+  width: 80%;
+}
+
+.slideimages img {
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.product-container h5 {
+  color: grey;
+}
+
+@media screen and (max-width: 1000px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+}

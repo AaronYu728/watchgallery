@@ -1,0 +1,95 @@
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  margin: 20px 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 90px 300px;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  background-color: #d8ba8e;
+  gap: 20px;
+}
+
+.header h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.3rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.itemlist-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.6rem;
+  margin: 0 1rem;
+}
+
+.item-card {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item-img {
+  width: 70%;
+}
+
+.item-card p {
+  font-size: 20px;
+  /* font-weight: 600; */
+  /* height: 60px; */
+}
+
+.itmeprice-add {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 10px;
+}
+
+.addbtn {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #4da0b7;
+  --bs-btn-border-color: #4da0b7;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4a99b0;
+  --bs-btn-hover-border-color: #4a99b0;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4a99b0;
+  --bs-btn-active-border-color: #4a99b0;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #4da0b7;
+  --bs-btn-disabled-border-color: #4da0b7;
+}
+
+.item-card a {
+  text-decoration: none;
+  color: black;
+}
+
+/* * {
+    border: 1px solid red;
+  } */
+
+@media screen and (max-width: 1000px) {
+  .itemlist-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* margin: 20px 0; */
+  }
+}
