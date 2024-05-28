@@ -32,12 +32,15 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.6rem;
   margin: 0 1rem;
+  overflow-y: auto;
+  height: 800px;
 }
 
 .item-card {
   border: 1px solid lightgray;
   border-radius: 5px;
   text-align: center;
+  /* height: 376px; */
 }
 
 .item-img {
@@ -45,7 +48,7 @@
 }
 
 .item-card p {
-  font-size: 20px;
+  font-size: 18px;
   /* font-weight: 600; */
   /* height: 60px; */
 }
@@ -81,6 +84,11 @@
 /* * {
     border: 1px solid red;
   } */
+
+#cartitemlist {
+  overflow-y: auto;
+  height: 600px;
+}
 
 @media screen and (max-width: 1000px) {
   .itemlist-container {
