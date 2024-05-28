@@ -107,7 +107,7 @@ function reloadShoppingCartView(productList) {
       <span>$${totalprice}</span>
       `;
   });
-  if (productList.length == 0) {
+  if (productList.length == 0 || !productList) {
     htmlContent = `<p class="NOITEMPROMOPT">You don't have any items in your cart. Let's get shopping!</p>`;
   }
   document.getElementById("cartitemlist").innerHTML = htmlContent;
