@@ -16,6 +16,17 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/productlist.css" />
+    <style>
+      .form-signin {
+        width: 400px;
+        padding: 1rem;
+      }
+      .login-form {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
     <title>Melbourne Watch Gallery</title>
   </head>
   <body>
@@ -40,9 +51,7 @@
               <a class="nav-link" href="./about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./management.html"
-                >Product Management</a
-              >
+              <a class="nav-link" href="">Product Management</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -69,8 +78,24 @@
       />
       <h1>Melbourne Watch Gallery</h1>
     </div>
-    <div>
-      <h1>Features to be improved, stay tuned.</h1>
+
+    <div class="login-form">
+      <form class="form-signin">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            data-eye-class="eyeClass"
+          />
+        </div>
+        <button class="btn addbtn w-100 py-2">Login</button>
+      </form>
     </div>
   </body>
 </html>
