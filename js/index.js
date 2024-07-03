@@ -38,7 +38,8 @@ window.onload = function () {
 
 function productDetailData(itemobj) {
   localStorage.setItem("detailData", JSON.stringify(itemobj));
-  window.location.href = "../html/productdetail.html";
+  window.location.href = "./html/productdetail.html";
+  console.log("window.location.href");
 }
 
 function addtocart(ele) {
