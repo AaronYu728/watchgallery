@@ -15,9 +15,8 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <!-- <link rel="stylesheet" href="../css/productlist.css" /> -->
-    <link rel="stylesheet" href="../css/shoppingcart.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/shoppingcart.css" />
     <link rel="stylesheet" href="../css/productdetail.css" />
     <title>Melbourne Watch Gallery</title>
   </head>
@@ -45,9 +44,7 @@
               <a class="nav-link" href="./about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./management.html"
-                >Product Management</a
-              >
+              <a class="nav-link" href="./management.html">Product Management</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -76,103 +73,19 @@
     </div>
 
     <div class="main_container">
-      <div class="product-container">
-        <div>
-          <img
-            src="https://www.jbhifi.com.au/cdn/shop/products/665847-Product-0-I-638307612604665908.jpg?v=1695164716"
-            alt="Garmin VivoActive 5 Smart Watch"
-          />
-          <div class="slideimages">
-            <img
-              src="https://www.jbhifi.com.au/cdn/shop/products/665847-Product-1-I-638307612604850448.jpg?v=1695164716"
-              alt="slide image-1"
-            />
-            <img
-              src="https://www.jbhifi.com.au/cdn/shop/products/665847-Product-2-I-638307612604880932.jpg?v=1695164716"
-              alt="slide image-2"
-            />
-            <img
-              src="https://www.jbhifi.com.au/cdn/shop/products/665847-Product-3-I-638307612604786323.jpg?v=1695164716"
-              alt="slide image-3"
-            />
-            <img
-              src="https://www.jbhifi.com.au/cdn/shop/products/665847-Product-4-I-638307612604749335.jpg?v=1695164716"
-              alt="slide image-4"
-            />
-          </div>
-        </div>
-        <div>
-          <h2>Garmin VivoActive 5 Smart Watch (Orchid/Orchid Metallic)</h2>
-          <h5>Model: 010-02862-13</h5>
-          <h2>$499</h2>
-          <button class="btn btn-primary mb-5">Add to Cart</button>
-          <h2>Product Overview</h2>
-          <p>
-            Know the real you with the vívoactive® 5 smartwatch, the ultimate
-            on-wrist coach designed to support your goals — whatever they may
-            be. Featuring a bright, colourful display and up to 11 days of
-            battery life, this GPS smartwatch is purpose-built with essential
-            health and fitness features to help you better understand your body.
-            Body Battery™ energy monitoring helps you keep your energy levels in
-            check with personalized insights based on sleep, naps, stress,
-            workouts and more. Improve the quality of your sleep with
-            personalized sleep coaching and nap detection plus even more details
-            such as HRV status (data presented is intended to be a close
-            estimation of metrics tracked). During the day, switch up your
-            activities with more than 30 built-in sports apps — including apps
-            for active wheelchair users — plus advanced training features to
-            keep you going strong. When paired to your smartphone, vívoactive 5
-            makes it easy to receive texts, emails and other smart notifications
-            right from your wrist. Plus, enjoy connectivity features such as
-            music storage, Garmin Pay™ contactless payments and more.
-          </p>
-        </div>
-      </div>
+      <div class="product-container"></div>
       <div class="cart">
         <h2>Shopping Cart</h2>
-        <div class="cartitemlist">
-          <div class="cartitem">
-            <img
-              class="cartimg"
-              src="https://www.jbhifi.com.au/cdn/shop/products/653318-Product-0-I-638235096607485668.jpg?v=1687913471"
-              alt="image of watch"
-            />
-            <p>Garmin VivoActive 4 Smart Watch (Black/Slate)</p>
-            <h5>$298</h5>
-            <button class="btn btn-secondary btnremove">Remove</button>
-          </div>
-          <div class="cartitem">
-            <img
-              class="cartimg"
-              src="https://www.jbhifi.com.au/cdn/shop/products/665844-Product-0-I-638307609604535334.jpg?v=1695164595"
-              alt="image of watch"
-            />
-            <p>Garmin VivoActive 5 Smart Watch (Black/Slate)</p>
-            <h5>$499</h5>
-            <button class="btn btn-secondary btnremove">Remove</button>
-          </div>
-          <div class="cartitem">
-            <img
-              class="cartimg"
-              src="https://www.jbhifi.com.au/cdn/shop/products/603584-Product-0-I-637976220777317716.jpg?v=1661989327"
-              alt="image of watch"
-            />
-            <p>
-              Ryze EVO Fitness & Wellbeing Smart Watch with Alexa (Dark
-              Grey/Red)
-            </p>
-            <h5>$149</h5>
-            <button class="btn btn-secondary btnremove">Remove</button>
-          </div>
-        </div>
+        <div id="cartitemlist"></div>
         <div class="tprice">
           <span>Total</span>
-          <span>$946</span>
+          <span id="totalprice"></span>
         </div>
-        <button class="btn btn-success btn-checkout">
-          Check out <span class="badge text-bg-secondary">3</span>
+        <button class="btn btn-success btn-checkout" onclick="">
+          Check out <span class="badge text-bg-secondary" id="badge">0</span>
         </button>
       </div>
     </div>
+    <script src="../js/product.js"></script>
   </body>
 </html>
